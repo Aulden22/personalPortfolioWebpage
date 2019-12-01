@@ -1,0 +1,146 @@
+.header {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        max-height: 75px;
+        width: 100%;
+        color: #7285a3;
+    }
+
+    body {
+        font-family: 'Alatsi', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 200;
+        color: #1d1b1b;
+        line-height: 1.5;
+        /*background-image: radial-gradient(#51574e, #4e5357, #4e5357);*/
+        background-color: #5a714f;
+    }
+    
+    h1,
+    h2 {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #1d1b1b;
+    }
+/*
+    #navbar {
+        display: flex;
+        flex-direction: row;
+    }
+*/
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 115px;
+        width: 100%;
+        background-color: #4e5357;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-list {
+        display: flex;
+        margin-right: 2rem;
+    }
+
+    /*Modified from FCC Personal Portfolio Stylesheet*/
+    @media only screen and (max-width: 28.75em) {
+        .nav {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+        }
+
+        body {
+            color: #0d025e;
+        }
+
+        a {
+            color: #02a4c4;
+        }
+
+        /*.nav-list {
+            margin: 0 1rem;
+        }*/
+    }
+    /*End FCC sample*/
+
+    #btn-welcome,
+    #btn-projects,
+    #btn-contact {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
+/*
+    #welcome-section {
+        margin-top: 100px;
+    }
+*/
+    .welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .welcome-byline {
+        font-family: 'Alatsi', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 200;
+        line-height: 0;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 4rem;
+        justify-content: center;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+    }
+/*
+    .contact-links {
+        display: grid;
+        justify-content: center;
+        position: fixed;
+    }
+*/
+
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 980px;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+    }
+    
+    .code {
+        color: #5a714f;
+        transition: color 0.3s ease-out;
+    }
+
+    .project-title:hover .code {
+        color: rgb(255, 113, 61);
+    }
